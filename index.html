@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+    <style>
+
+        body {
+            background-color: #f4f6f7;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: rgb(0, 139, 28);
+        }
+
+        h2 {
+            color: rgb(35, 0, 100);
+        }
+
+        h3{
+            color: rgb(138, 11, 62)
+        }
+
+        .highlight {
+            color: rgb(128, 102, 0);
+            font-weight: bold;
+        }
+
+        #student-name {
+            color: rgb(128, 0, 102);
+            font-size: 1.5em;
+        }
+
+        
+        .badge {
+            background-color: rgb(47, 255, 0);
+            color: black;
+            padding: 4px 6px;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-left: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-bottom: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #333333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size:25px;
+        }
+         nav a:hover{
+            color:red;
+         }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1em;
+            color: #555;
+        }
+        .nav{
+            display:flex;
+            justify-content:flex-end;
+            background-color:blue;
+            color:wheat;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Portal</h1>
+        <nav class="nav">
+            <a href="#profile">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="profile">
+            <h2>Student Profile</h2>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td id="student-name">ASHEETH A <span class="badge">THIK THAK BANDA</span></td>
+                </tr>
+                <tr>
+                    <td>Student ID</td>
+                    <td>26bcs10343</td>
+                </tr>
+                <tr>
+                    <td>Program</td>
+                    <td class="highlight">WEBDEV</td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td>2030 Batch</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>asheeth.26bcs10343@sst.scaler.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML pehle se padhi hui thi</li>
+                <li>CSS shubham sir ne padhaya hai</li>
+                <li>CPP sikha hai</li>
+                <li>Python still learning </li>
+                <li>Git thoda bohot</li>
+            </ul>
+        </section>
+
+        
+        <section id="schedule">
+            <h2>Weekly Schedule</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>9:30 AM</th>
+                    <th>2:00 PM</th>
+                    <th>4:00 PM</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>ICP</td>
+                    <td>WEBDEV</td>
+                    <td>WEBDEV LAB</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>ICP</td>
+                    <td>MATH</td>
+                    <td>ICP LAB</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>MATH</td>
+                    <td>WEBDEV</td>
+                    <td>WEBDEV LAB</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>ICP</td>
+                    <td>WEBDEV</td>
+                    <td>ICP LAB</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>MATH</td>
+                    <td>ICP</td>
+                    <td>AAJ NAHI HAI LAB</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="register"> 
+         <h2>Course Registration</h2>
+            <form>
+                <fieldset>
+                    <h3>Student Information</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Course Selection</h3>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course">
+                        <option>Select Course</option>
+                        <option>HTML & CSS</option>
+                        <option>JAVA SCRIPT</option>
+                        <option>ICP</option>
+                        <option>MATHEMATICS</option>
+                        <option>ENGLISH</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Preferred Learning Mode</h3>
+                    <input type="radio" id="online" name="mode" value="online">
+                    <label for="online">ONLINE(CHOOSE MAT KARO PACHTAOGE)</label><br><br>
+                    <input type="radio" id="offline" name="mode" value="offline">
+                    <label for="offline">OFFLINE(YAHI CHOOSE KARNA)</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Skills You Already Know</h3>
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML(PURA MATLAB SAB KUCH)</label><br><br>
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css">CSS(ATLEAST FLEXBOX GRID THEEK SE )</label><br><br>
+                    <input type="checkbox" id="js" name="skills" value="JavaScript">
+                    <label for="js">JavaScript(DEKHLENA)</label><br><br>
+                    <input type="checkbox" id="python" name="skills" value="Python">
+                    <label for="python">Python(LIBRARIES AANI CHAHIYE)</label><br><br>
+                    <input type="checkbox" id="python" name="skills" value="Python">
+                    <label for="python">CPP(ARRAYS AND STRINGS TAK)</label><br><br>
+                    
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portal</p>
+    </footer>
+</body>
+</html>
